@@ -28,6 +28,8 @@
 //   margo.classList.remove("active");
 // });
 
+/*------------*/
+
 let menuBar = document.querySelector(".hamburger");
 let menuSee = document.querySelector(".nav_menu");
 
@@ -40,3 +42,20 @@ document.addEventListener("click", () => {
     menuSee.classList.remove("active");
   }
 });
+
+/*------------*/
+
+// let menuBar = document.querySelector(".hamburger");
+// let menuSee = document.querySelector(".nav_menu");
+
+// menuBar.addEventListener("mouseover", function () {
+//   menuSee.classList.add("active");
+// });
+
+// let link = document.querySelectorAll(".nav_projects-tab");
+
+// for (let val of link) {
+//   val.addEventListener("click", function () {
+//     menuSee.classList.remove("active");
+//   });
+// }
