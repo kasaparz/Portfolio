@@ -1,0 +1,637 @@
+@font-face {
+	font-family: "De Longhi Sans";
+	src: url("./Fonts/DeLonghi\ Sans\ Light.otf");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "De Longhi Sans";
+	src: url("./Fonts/DeLonghi\ Sans\ Bold.otf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "De Longhi Sans";
+	src: url("./Fonts/DeLonghi\ Sans\ Black.otf");
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "De Longhi Sans";
+	src: url("./Fonts/DeLonghi\ Sans\ Medium.otf");
+	font-weight: 500;
+}
+
+@font-face {
+	font-family: "De Longhi Sans";
+	src: url("./Fonts/DeLonghi\ Sans\ Regular.otf");
+	font-weight: 400;
+}
+@font-face {
+	font-family: "De Longhi Serif";
+	src: url("./Fonts/DeLonghi\ Serif\ Bold.otf");
+	font-weight: 700;
+}
+@font-face {
+	font-family: "De Longhi Serif";
+	src: url("./Fonts/DeLonghi\ Serif\ Black.otf");
+	font-weight: 900;
+}
+
+@font-face {
+	font-family: "De Longhi Serif";
+	src: url("./Fonts/DeLonghi\ Serif\ Light.otf");
+	font-weight: 300;
+}
+@font-face {
+	font-family: "De Longhi Serif";
+	src: url("./Fonts/DeLonghi\ Serif\ Medium.otf");
+	font-weight: 500;
+}
+@font-face {
+	font-family: "De Longhi Serif";
+	src: url("./Fonts/DeLonghi\ Serif\ Regular.otf");
+	font-weight: 400;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f8f8ef;
+}
+.wrap {
+	display: flex;
+	min-height: 100vh;
+	background-color: #fff;
+	align-items: center;
+	flex-direction: column;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+section {
+	display: flex;
+	flex-direction: row;
+	flex-grow: 1;
+	align-items: stretch;
+	width: 100%;
+	max-width: 1140px;
+	margin: 30px;
+}
+@media (max-width: 900px) {
+	section {
+		margin-top: 0;
+		margin-bottom: 30px;
+		margin-left: 0;
+		margin-right: 0;
+	}
+}
+/*-----------------------------------HEADER---------------------*/
+
+header {
+	display: flex;
+	position: relative;
+
+	background-image: url("./img/brad_big.png");
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+	flex-basis: 622px;
+	width: 100%;
+	max-width: 1140px;
+	margin-top: 35px;
+}
+.header-txt {
+	color: #0c2340;
+
+	position: absolute;
+	top: 30px;
+	left: 30%;
+	z-index: 1;
+	font-size: 26px;
+	letter-spacing: 0px;
+	color: #0c2340;
+	font-weight: 300;
+	font-family: "De Longhi Sans";
+}
+.header-sub {
+	color: #0c2340;
+
+	position: absolute;
+	top: 70px;
+	left: 30%;
+	z-index: 1;
+	font-size: 46px;
+	line-height: 46px;
+	color: #0c2340;
+	font-weight: bold;
+	font-family: "De Longhi Serif";
+}
+
+.shadow {
+	width: 100%;
+	position: absolute;
+	top: 0;
+	z-index: 0;
+	display: none;
+}
+.logo {
+	position: absolute;
+	bottom: 30px;
+	left: 20px;
+}
+
+@media (max-width: 900px) {
+	header {
+		flex-basis: 900px;
+		background-image: url("./img/brad_medium.png");
+		margin-bottom: 60px;
+		margin-top: 0;
+
+		width: 100%;
+	}
+	.header-txt {
+		top: 80px;
+		left: 30px;
+		font-size: 38px;
+		letter-spacing: 0px;
+		color: #0c2340;
+		font-weight: 300;
+		font-family: "De Longhi Sans";
+	}
+	.header-sub {
+		top: 130px;
+		left: 30px;
+		font-size: 66px;
+		line-height: 66px;
+		color: #0c2340;
+		font-weight: bold;
+		font-family: "De Longhi Serif";
+	}
+	.logo {
+		bottom: 35px;
+		left: 35px;
+	}
+}
+
+@media (max-width: 600px) {
+	header {
+		flex-basis: 675px;
+		background-image: url("./img/Layer\ 8.png");
+		margin-bottom: 30px;
+	}
+	.shadow {
+		width: 100%;
+		top: 0;
+		display: block;
+	}
+	.header-txt {
+		position: absolute;
+		top: 40px;
+		left: 35px;
+		font-size: 29px;
+		letter-spacing: 0px;
+		color: #0c2340;
+		font-weight: 300;
+		font-family: "De Longhi Sans";
+	}
+	.header-sub {
+		font-size: 51px;
+		top: 90px;
+		line-height: 51px;
+		color: #0c2340;
+		font-weight: bold;
+		font-family: "De Longhi Serif";
+	}
+}
+@media (max-width: 478px) {
+	.shadow {
+		display: block;
+		position: absolute;
+		top: 0;
+	}
+}
+
+/*---------------------ELETTA--------------------------*/
+.eletta {
+	background-image: url("./img/eletta_big.png");
+	display: flex;
+	position: relative;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	flex-basis: 628px;
+	width: 100%;
+	max-width: 1140px;
+	margin-bottom: 0;
+}
+.eletta-txt {
+	background-color: #0c2340;
+	color: white;
+	display: flex;
+	position: absolute;
+	top: 90px;
+	left: 0;
+	padding: 30px 30px 30px 50px;
+	font-size: 52px;
+	color: #ffffff;
+	font-weight: bold;
+	font-family: "De Longhi Serif";
+}
+
+@media (max-width: 900px) {
+	.eletta {
+		background-image: url("./img/eletta_medium.png");
+		flex-basis: 602px;
+	}
+	.eletta-txt {
+		top: 30px;
+		padding: 30px;
+		font-size: 41px;
+		color: #ffffff;
+		font-weight: bold;
+		font-family: "De Longhi Serif";
+	}
+}
+@media (max-width: 660px) {
+	.eletta {
+		background-image: url("./img/elleta_small1.png");
+		flex-basis: 537px;
+	}
+	.eletta-txt {
+		margin-right: 25px;
+
+		font-size: 41px;
+		color: #ffffff;
+		font-weight: bold;
+		font-family: "De Longhi Serif";
+	}
+}
+@media (max-width: 500px) {
+	.eletta {
+		flex-basis: 478px;
+	}
+	.eletta-txt {
+		margin-right: 0;
+		padding: 20px;
+	}
+}
+
+/*----------------FEATURES---------------------*/
+
+h1 {
+	padding: 10px 0;
+
+	font-size: 60px;
+	color: #0c2340;
+	font-weight: bold;
+	font-family: "De Longhi Serif";
+}
+.item-title {
+	font-size: 20px;
+	margin-top: 40px;
+	margin-bottom: 25px;
+	text-align: center;
+	font-family: "De Longhi Sans";
+	font-weight: 500;
+}
+.item-description {
+	font-size: 15px;
+	text-align: center;
+
+	font-size: 15px;
+	color: #000000;
+	font-family: "De Longhi Sans";
+	line-height: 20px;
+}
+
+section.features {
+	display: flex;
+	padding: 0px;
+
+	max-width: 1140px;
+}
+section .feature-items {
+	flex-direction: row;
+	justify-content: space-between;
+	margin: 0;
+}
+
+.item {
+	flex-basis: 23%;
+
+	display: flex;
+	flex-direction: column;
+	align-items: stretch;
+}
+
+.item-one {
+	background-image: url("./img/item-one.png");
+
+	height: 382px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.item-two {
+	background-image: url("./img/item-two.png");
+	height: 382px;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.item-three {
+	height: 382px;
+	background-image: url("./img/item-three.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.item-four {
+	height: 382px;
+	background-image: url("./img/item-four.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+@media (max-width: 900px) {
+	section.features {
+		padding: 10px;
+	}
+
+	.item {
+		flex-basis: 50%;
+
+		padding: 20px;
+		/* kontener */
+		display: flex;
+		flex-direction: column;
+		/* align-items: stretch; */
+	}
+
+	section {
+		flex-wrap: wrap;
+	}
+}
+
+@media (max-width: 660px) {
+	section {
+		flex-wrap: wrap;
+		flex-direction: column;
+	}
+	section .three {
+		flex-direction: column;
+	}
+
+	.item {
+		flex-basis: 100%;
+
+		padding: 20px;
+		/* kontener */
+		display: flex;
+		flex-direction: column;
+		/* align-items: stretch; */
+	}
+}
+
+/*-----------------COLD BREW----------------*/
+
+.cold-brew {
+	background-color: #a88c76;
+	background-image: url("./img/cold-brew-big.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	display: flex;
+	position: relative;
+
+	flex-basis: 583px;
+	width: 100%;
+	max-width: 1140px;
+}
+.cold-brew-wrapper {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	width: 100%;
+}
+.cold-brew-title {
+	margin-top: 70px;
+	margin-bottom: 30px;
+	font-size: 20px;
+	text-transform: uppercase;
+	color: #ffff;
+
+	font-weight: 300;
+	font-family: "De Longhi Sans";
+	text-align: center;
+}
+.cold-brew-subtitle {
+	font-size: 52px;
+	color: #ffffff;
+	font-weight: 800;
+	font-family: "De Longhi Sans";
+	text-align: center;
+	margin-bottom: 50px;
+	line-height: 62px;
+}
+.cold-brew-txt {
+	font-size: 26px;
+	line-height: 30px;
+	color: #ffffff;
+	font-family: "De Longhi Sans";
+	text-align: center;
+	width: 50%;
+}
+
+@media (max-width: 920px) {
+	.cold-brew {
+		background-color: #a88c76;
+
+		flex-basis: 641px;
+
+		position: relative;
+		background-image: url("./img/xxx.png");
+		width: 100%;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+
+		padding: 60px;
+		margin: 0;
+	}
+	.cold-brew-title {
+		margin-top: 0px;
+	}
+
+	.cold-brew-txt {
+		width: 90%;
+	}
+}
+
+@media (max-width: 600px) {
+	.cold-brew {
+		background-color: #a88c76;
+
+		flex-basis: 879px;
+
+		position: relative;
+		background-image: url("./img/col-brew-small.png");
+		width: 100%;
+		background-position: top;
+		background-repeat: no-repeat;
+		background-size: contain;
+	}
+}
+
+/*--------------------STORE MODUL-------------*/
+
+.store-modul {
+	width: 100%;
+	max-width: 1200px;
+	flex-basis: 300px;
+	background-image: url("./img/store-modul.png");
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+@media (max-width: 900px) {
+	.store-modul {
+		flex-basis: 370px;
+	}
+}
+@media (max-width: 660px) {
+	.store-modul {
+		flex-basis: 370px;
+	}
+}
+
+/*------------------APARATI----------------*/
+.aparati {
+	display: flex;
+	max-width: 1140px;
+	margin: 50px auto;
+	width: 100%;
+	/* height: 594px; */
+	margin-bottom: 100px;
+}
+
+.aparati-wrap {
+	display: flex;
+	flex-direction: row;
+
+	width: 100%;
+}
+.aparati-one {
+	display: flex;
+	position: relative;
+	width: 50%;
+	height: 594x;
+
+	background-image: url("./img/aparati.big.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	margin-right: 15px;
+}
+.aparti-txt {
+	display: flex;
+	position: absolute;
+	bottom: 20px;
+	padding: 11px 27px 14px 27px;
+	background-color: #0c2340;
+
+	font-size: 26px;
+	color: #ffffff;
+	font-weight: 300;
+	font-family: "De Longhi Sans";
+}
+
+.aparati-two {
+	margin-left: 15px;
+	display: flex;
+	width: 50%;
+	height: 594px;
+
+	background-image: url("./img/brad-last-big.png");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+.aparti-three {
+	display: none;
+}
+@media (max-width: 900px) {
+	.aparati-wrap {
+		display: flex;
+		flex-direction: column;
+
+		width: 100%;
+	}
+	.aparati-one {
+		display: none;
+	}
+	.aparati-two {
+		display: flex;
+		width: 100%;
+		height: 691px;
+
+		background-image: url("./img/brad-last-mid.png");
+		background-position: center;
+		background-size: cover;
+		margin-left: 0;
+	}
+	.aparti-three {
+		display: flex;
+		position: relative;
+		background-color: #0c2340;
+		background-image: url("./img/prod_last.png");
+		background-position: center;
+		background-repeat: no-repeat;
+		background-size: 75%;
+		width: 100%;
+		height: 816px;
+	}
+	.aparti-last {
+		font-size: 31px;
+		color: #0c2340;
+		font-weight: 300;
+		font-family: "De Longhi Sans";
+		background-color: #fff;
+		position: absolute;
+		top: 50px;
+		padding: 15px 35px;
+	}
+	.logo-last {
+		position: absolute;
+		bottom: 5%;
+		left: 35%;
+		width: 30%;
+	}
+}
+@media (max-width: 660px) {
+	.aparati-two {
+		display: flex;
+		width: 100%;
+		height: 476px;
+
+		background-image: url("./img/brad-last-small.png");
+		background-position: center;
+		background-size: cover;
+	}
+	.aparti-three {
+		display: flex;
+		position: relative;
+		background-color: #0c2340;
+
+		width: 100%;
+		height: 553px;
+	}
+}
